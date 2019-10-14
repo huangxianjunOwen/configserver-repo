@@ -8,4 +8,4 @@ eureka:
     prefer-ip-address: true
     instance-id: ${spring.application.name}:${server.port}
 env: '{cipher}AQBbkWC6hfKlgYqObQ69j2Fdrg024d1Lmjt+V1wPPIskNDuizsSn1TzXhaJP0yxG0wh98nu4KYgaQk9xjlqyydUr1XG4Gxv0qPaWGiNqZsD5XiyNVBq1uHT2FSf0vnJIQqcg1BVTPnGqoNpko4FPTmjHjXRaR1P4wR2X45GIpmroztyEoIgfkrR44MEvFfTOBW675y9I3ftHDia/BDt5kC2d91tv17Y/8slPJC0sSfVgzpiiGC9n6oeSIz5ObXP1bd4S4ywEAw09NeR2LLiABaev+IClIeAPHZJXkCdQscVu+XGGeBJ0/4QFiBmQi1iPPLWGkKgmqRaHfkxIWxpXWtqj5vcCyu3jCSpq/Yh918xHfMRespLJazv5h/HGrcrWLigW3eRg8kqZSzX8Yvv+acPc'
-name: owen
+name: huangxianjun
