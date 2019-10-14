@@ -1,0 +1,11 @@
+server:
+  port: 8081
+eureka:
+  client:
+    service-url:
+      defalutZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${server.port}
+env: '{cipher}AQAms8FLAOq/1fCRkF5iuKu2cEK6KiIYVm9D2CNTcvdzRW0awVOcFkierHBL7rqTWgDtInvo/Lx+0lI2Tg43zYfGisiPB+Ja2p2naJfooUrzl7cAOurmFco6WOZBpWAoUq1TXHVRjcniisG2hjbP8TjPzdddL7vKDtm9dG02zTqzfWPJ3ZlOz5sDRdzPhmeJ4z9T7nLmSR1pu1017aOiotPaz6Q9ykDzYWzqrRX+mwtz7O6GIe5tUH5/AIOF6i8vLL0cEsNZRNJuzj99TTjlG/weHWRhIalvh4s126tvlxK2wO1JkeTTnPfRtZMOaZQsZ9+4SoWwUWzWA/Iqvo9a8RhhLV86D0GRUheBZ0b+Z+TwSODw8mr/lf29bu3vVBBmrgI='
+name: owen
