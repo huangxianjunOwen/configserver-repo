@@ -1,0 +1,27 @@
+server:
+  port: 8765
+spring:
+  application:
+    name: route-gateway
+  cloud:
+    gateway:
+      routes:
+        - id: erp-route
+          uri: "http://localhost:8081/"
+          predicates:
+            - Path=/erp/**
+          filters:
+            - StripPrefix=1 #StripPrefix=1表示像http://localhost:8765/erp/xxx的请求会被转换为http://localhost:8081/xxx方式的请求，即剥离一个url(这里的erp)
+        - id: sys-route
+          uri: "http://localhost:8082/"
+          predicates:
+            - Path=/sys/**
+          filters:
+            - StripPrefix=1
+eureka:
+  client:
+    service-url:
+      defalutZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${server.port}
